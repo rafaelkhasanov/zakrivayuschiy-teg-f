@@ -373,14 +373,28 @@
       </div>
     </li>
   </ul>
-  <button class="save-button">
-    <svg class="floppy" xmlns="http://www.w3.org/2000/svg">
-      <use href="./images/floppy.svg#floppy"></use>
+  <button class="save-button" type="button" onclick="window['insert-floppy'].showModal()" aria-controls="insert-floppy">
+    <svg class="save-button-img" viewBox="0 0 40 40">
+      <use href="./svg/floppy.svg#floppy"></use>
     </svg>
     <span class="button__text">
       Сохранить на память
     </span>
   </button>
+  <dialog id="insert-floppy">
+    <div class="insert-floppy-content">
+        <svg class="insert-floppy-img" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+      <p class="insert-floppy-text">Вставьте дискету, чтобы продолжить</p>
+    </div>
+    <button
+            onclick="window['insert-floppy'].close()"
+            class="ok-button"
+    >
+      <span>Ок</span>
+    </button>
+  </dialog>
 </main>
 <script src="./scripts/like.js"></script>
 </body>
