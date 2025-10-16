@@ -242,6 +242,14 @@ dialog[open] .insert-floppy-content {
   text-transform: uppercase;
 }
 
+.button-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.button-shadow:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-button-shadow-color);
+}
 @media (width <= 375px) {
   .save-button {
     flex-direction: column;
