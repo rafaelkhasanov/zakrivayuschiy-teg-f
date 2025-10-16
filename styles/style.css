@@ -148,17 +148,18 @@
   border: none;
   display: flex;
   align-items: center;
+
   gap: 12px;
 }
 
 .card-content .card__icon-button {
   background-color: transparent;
   max-block-size: 38px;
-  padding: 7px;
   border: transparent 2px solid;
   cursor: pointer;
   outline: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .card__icon-button:focus {
@@ -302,7 +303,7 @@ dialog[open] .insert-floppy-content {
   transform: scaleX(1);
 }
 
-.like-icon {
+ .heart {
   width: 27px;
   height: 24px;
 }
