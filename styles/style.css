@@ -159,11 +159,14 @@
   border: 2px solid #000;
   padding-inline: 17px;
   padding-block: 8px;
-  background-color: transparent;
   min-width: 130px;
+  color:var(--white-color);
+  background-color: var(--white-color);
 }
 
 .card__like-button .button__text {
+  position: relative;
+  mix-blend-mode: difference;
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
   font-size: 14px;
@@ -177,19 +180,24 @@
   margin: 50px auto 100px;
   padding-inline: 20px;
   padding-block: 15px;
-  background-color: #fff;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   border: 2px solid #000;
+  color:var(--white-color);
+  background-color: var(--white-color);
 }
 
 .save-button .save-button-img {
-  width: 21px;
-  height: 21px;
+  inline-size: 21px;
+  block-size: 21px;
+  position: relative;
+  mix-blend-mode: difference;
+  fill: var(--white-color);
 }
 
 .save-button .button__text {
   align-items: center;
+  mix-blend-mode: difference;
 }
 
 dialog[open] {
@@ -236,10 +244,12 @@ dialog[open] .insert-floppy-content {
   padding-inline: 17px;
   background-color: transparent;
   border: 2px solid #000;
+  color: var(--white-color);
 }
 
 .ok-button span {
   text-transform: uppercase;
+  mix-blend-mode: difference;
 }
 
 .button-shadow {
@@ -250,6 +260,26 @@ dialog[open] .insert-floppy-content {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-button-shadow-color);
 }
+
+.animated-button {
+  position: relative;
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  background-color: #000;
+  transform-origin: left;
+}
+
+.animated-button:hover:before {
+  transform: scaleX(1);
+}
+
+
 @media (width <= 375px) {
   .save-button {
     flex-direction: column;
