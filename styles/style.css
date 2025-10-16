@@ -150,18 +150,35 @@
   gap: 12px;
 }
 
-.card-content .icon-button {
+.card-content .card__icon-button {
   background-color: transparent;
-  border: none;
+  max-block-size: 38px;
+  padding: 7px;
+  border: transparent 2px solid;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 
-.card__like-button {
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border: 2px solid #000;
+}
+
+.card-content .card__like-button {
   border: 2px solid #000;
   padding-inline: 17px;
   padding-block: 8px;
-  min-width: 130px;
+  min-inline-size: 130px;
   color:var(--white-color);
   background-color: var(--white-color);
+  display: block;
+  font-size: 14px;
+  min-block-size: 38px;
 }
 
 .card__like-button .button__text {
@@ -257,6 +274,10 @@ dialog[open] .insert-floppy-content {
 }
 
 .button-shadow:focus {
+  outline: none;
+}
+
+.button-shadow:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-button-shadow-color);
 }
