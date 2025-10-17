@@ -103,7 +103,6 @@
   padding: 6px 10px;
   line-height: 100%;
   letter-spacing: 0;
-  vertical-align: center;
 }
 
 .card-media-content {
@@ -323,7 +322,7 @@ dialog[open] .ok-button span {
   transform: scaleX(1);
 }
 
- .heart {
+.heart {
   width: 27px;
   height: 24px;
 }
@@ -409,11 +408,25 @@ dialog[open] .ok-button span {
     border: 2px solid var(--black-color);
   }
 
+  .card-title {
+    line-height: normal;
+    padding: 5px 10px 4px;
+  }
+
   .main {
     margin-top: 100px;
   }
+  
   .save-button {
     flex-direction: column;
+  }
+
+  .save-button .save-button-img {
+    inline-size: 28px;
+    block-size: 28px;
+    position: relative;
+    mix-blend-mode: difference;
+    fill: var(--white-color);
   }
 
   dialog[open] {
