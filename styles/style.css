@@ -214,13 +214,14 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto 100px;
-  padding-inline: 20px;
+  padding-inline: 18px;
   padding-block: 15px;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   border: 2px solid #000;
   color:var(--white-color);
   background-color: var(--white-color);
+  inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
 }
 
 .save-button .save-button-img {
@@ -273,7 +274,7 @@ dialog[open] .insert-floppy-content {
   text-transform: uppercase;
 }
 
-.ok-button {
+dialog[open] .ok-button {
   display: block;
   inline-size: 100%;
   padding-block: 9px;
@@ -283,7 +284,7 @@ dialog[open] .insert-floppy-content {
   color: var(--white-color);
 }
 
-.ok-button span {
+dialog[open] .ok-button span {
   text-transform: uppercase;
   mix-blend-mode: difference;
 }
