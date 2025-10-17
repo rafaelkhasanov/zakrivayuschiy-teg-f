@@ -42,12 +42,14 @@
 .header__title {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
+  font-weight: 400;
 }
 
 .header__description {
   margin-top: 20px;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .main {
@@ -73,6 +75,7 @@
   padding: 6px 10px;
   line-height: 100%;
   letter-spacing: 0;
+  font-weight: var(--wght-title, 715);
 }
 
 .card-media-content {
@@ -83,6 +86,7 @@
 .card-media-content .card-media-content-label {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0;
   position: absolute;
   right: 25px;
@@ -179,7 +183,19 @@
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
   font-size: 14px;
+  font-weight: 400;
 }
+
+@supports (font-variation-settings: normal) {
+  .card-title {
+    font-variation-settings: "wght" var(--wght-title, 715);
+  }
+
+  .card-text {
+    font-variation-settings: "wght" var(--wght-text, 410);
+  }
+}
+
 
 .save-button {
   display: flex;
@@ -191,6 +207,7 @@
   padding-block: 15px;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+  font-weight: 400;
   border: 2px solid #000;
   color: var(--white-color);
   background-color: var(--white-color);
@@ -220,6 +237,7 @@ dialog[open] {
   gap: 30px;
   border: 2px solid var(--white-color);
   font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
   position: fixed;
   inset: 0;
 }
