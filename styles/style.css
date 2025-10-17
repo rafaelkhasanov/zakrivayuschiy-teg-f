@@ -240,14 +240,14 @@
 }
 
 dialog[open] {
-  inline-size: clamp(341px, 100%, 353px);
+  inline-size: clamp(21.313rem, 21.092rem + 0.939vw, 21.938rem);
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  border: 2px solid #000;
+  border: 2px solid var(--white-color);
   font-family: var(--accent-font), sans-serif;
   position: fixed;
   inset: 0;
@@ -416,7 +416,7 @@ dialog[open] .ok-button span {
   .main {
     margin-top: 100px;
   }
-  
+
   .save-button {
     flex-direction: column;
   }
