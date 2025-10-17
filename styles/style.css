@@ -228,8 +228,7 @@
 }
 
 dialog[open] {
-  inline-size: clamp(21.313rem, 21.092rem + 0.939vw, 21.938rem);
-  padding: 30px;
+  inline-size: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,12 +265,11 @@ dialog[open] .insert-floppy-content {
 }
 
 dialog[open] .ok-button {
-  display: block;
   inline-size: 100%;
   padding-block: 9px;
   padding-inline: 17px;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid var(--black-color);
   color: var(--white-color);
 }
 
@@ -441,6 +439,6 @@ dialog[open] .ok-button span {
   }
 
   dialog[open] {
-    padding: 30px 40px;
+    padding: 28px 38px;
   }
 }
