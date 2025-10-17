@@ -55,9 +55,10 @@
 
 .header {
   inline-size: var(--body-content-width);
-  max-block-size: 368px;
-  height: 500px;
-  border: 2px solid #000;
+  min-block-size: 368px;
+  padding-block: clamp(7.625rem, 7.449rem + 0.751vw, 8.125rem);
+  padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
+  outline: 2px solid #000;
   font-family: var(--accent-font), sans-serif;
   background-color: #fff;
   display: flex;
@@ -65,14 +66,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+
 }
 
-.header_header-title {
+.header__title {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
 }
 
-.header_header-description {
+.header__description {
   margin-top: 20px;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   text-transform: uppercase;
