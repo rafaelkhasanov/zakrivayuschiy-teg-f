@@ -81,7 +81,7 @@
 }
 
 .main {
-  margin-top: 100px;
+  margin-top: 98px;
 }
 
 .card-list  {
@@ -100,8 +100,10 @@
 .card-title {
   font-size: 18px;
   font-variation-settings: 'wght' var(--wght-title);
-  padding: 5px 10px;
+  padding: 6px 10px;
   line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: center;
 }
 
 .card-media-content {
