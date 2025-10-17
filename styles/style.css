@@ -438,9 +438,6 @@ dialog[open] .ok-button span {
   .save-button .save-button-img {
     inline-size: 28px;
     block-size: 28px;
-    position: relative;
-    mix-blend-mode: difference;
-    fill: var(--white-color);
   }
 
   dialog[open] {
