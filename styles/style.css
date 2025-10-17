@@ -54,10 +54,10 @@
 }
 
 .header {
-  width: clamp(var(--min-block-width), var(--recommend-block-width), var(--max-block-width));
+  inline-size: var(--body-content-width);
   max-block-size: 368px;
   height: 500px;
-  border: 2px solid black;
+  border: 2px solid #000;
   font-family: var(--accent-font), sans-serif;
   background-color: #fff;
   display: flex;
@@ -68,13 +68,13 @@
 }
 
 .header_header-title {
-  font-size: clamp(49px, 1em, 65px);
-  margin: 0 auto;
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
 }
 
 .header_header-description {
   margin-top: 20px;
-  font-size: clamp(14px, 1em, 23px);
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .card {
-  width: clamp(var(--min-block-width), var(--recommend-block-width), var(--max-block-width));
+  inline-size: var(--body-content-width);
   border: 2px solid #000;
   background-color: #fff;
 }
@@ -99,11 +99,12 @@
   font-size: 18px;
   font-variation-settings: 'wght' var(--wght-title);
   padding: 5px 10px;
-  border-bottom: 2px solid #000;
+  line-height: 100%;
 }
 
 .card-media-content {
   position: relative;
+  border-block: 2px solid #000;
 }
 
 .card-media-content .card-media-content-label {
@@ -115,8 +116,10 @@
   top: 25px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  color: #000;
-  text-shadow: 1px var(--text-stroke-color);
+  text-shadow:  -1px 0 var(--text-stroke-color),
+  0 1px var(--text-stroke-color),
+  1px 0 var(--text-stroke-color),
+  0 -1px var(--text-stroke-color);
   z-index: 1;
 }
 
@@ -139,27 +142,34 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  border-top: 2px solid #000;
+}
+
+.card-text {
+  line-height: 21px;
+  font-size: 18px;
+  letter-spacing: 0;
 }
 
 .card-content .buttons {
-  margin-left: auto;
-  width: auto;
+  justify-content: end;
   border: none;
   display: flex;
   align-items: center;
-
-  gap: 12px;
+  gap: 7px;
 }
 
-.card-content .card__icon-button {
+.card__icon-button {
+  display: flex;
+  padding-block: 0;
+  padding-inline: 0;
+  align-items: center;
+  justify-content: space-between;
   background-color: transparent;
   max-block-size: 38px;
   border: transparent 2px solid;
   cursor: pointer;
   outline: none;
   overflow: hidden;
-  padding: 0;
 }
 
 .card__icon-button:focus {
@@ -172,7 +182,7 @@
   transition: border-color 0.3s ease;
 }
 
-.card-content .card__like-button {
+.card__like-button {
   border: 2px solid #000;
   padding-inline: 17px;
   padding-block: 8px;

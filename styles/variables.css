@@ -1,6 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
+  --white-color: #fff;
+  --black-color: #000;
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
   --wght-title: 715;
@@ -11,11 +13,11 @@
           linear-gradient(#e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --min-block-width: 375px;
   --max-block-width: 700px;
+  --body-content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   --recommend-block-width: 100%;
-  --text-stroke-color: #fff;
-  --accent-button-shadow-color: #000;
-  --accent-color: #000;
-  --white-color: #fff;
-  --contour-color: #000;
+  --text-stroke-color: var(--white-color);
+  --accent-button-shadow-color: var(--black-color);
+  --accent-color: var(--black-color);
+  --contour-color: var(--black-color);
   --animation-fill-color: #FF0000;
 }
