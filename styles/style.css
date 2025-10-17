@@ -382,7 +382,7 @@ dialog[open] .ok-button span {
   }
 
   .sparks {
-    animation: animation-sparks 2s ease-in 0.3s 1 forwards;
+    animation: animation-sparks 0.3s ease-in 0.3s 1 forwards;
     animation-fill-mode: none;
     transform-origin: center;
   }
