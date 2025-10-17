@@ -55,7 +55,7 @@
 
 .header {
   inline-size: var(--body-content-width);
-  min-block-size: 368px;
+  block-size: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
   padding-block: clamp(7.625rem, 7.449rem + 0.751vw, 8.125rem);
   padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
   outline: 2px solid #000;
@@ -404,6 +404,10 @@ dialog[open] .ok-button span {
 }
 
 @media (width <= 375px) {
+  .header {
+    outline: none;
+    border: 2px solid var(--black-color);
+  }
   .save-button {
     flex-direction: column;
   }
