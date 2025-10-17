@@ -30,7 +30,7 @@
   padding-block: clamp(7.625rem, 7.449rem + 0.751vw, 8.125rem);
   padding-inline: clamp(1rem, -1.344rem + 10vw, 7.656rem);
   outline: 2px solid #000;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@
 }
 
 .card-media-content .card-media-content-label {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -180,7 +180,7 @@
 .card__like-button .button__text {
   position: relative;
   mix-blend-mode: difference;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   line-height: 90%;
   font-size: 14px;
   font-weight: 400;
@@ -205,7 +205,7 @@
   margin: 50px auto 100px;
   padding-inline: 18px;
   padding-block: 15px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-weight: 400;
   border: 2px solid #000;
@@ -235,7 +235,7 @@ dialog[open] {
   justify-content: center;
   gap: 30px;
   border: 2px solid var(--white-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: 400;
   position: fixed;
   inset: 0;
