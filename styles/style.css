@@ -408,6 +408,10 @@ dialog[open] .ok-button span {
     outline: none;
     border: 2px solid var(--black-color);
   }
+
+  .main {
+    margin-top: 100px;
+  }
   .save-button {
     flex-direction: column;
   }
