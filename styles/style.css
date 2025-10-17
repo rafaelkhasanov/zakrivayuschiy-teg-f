@@ -10,34 +10,6 @@
 
 */
 
-.blur {
-  filter: blur(15px);
-}
-
-.sepia {
-  filter: sepia(0.6);
-}
-
-.brightness {
-  filter: brightness(0.5);
-}
-
-.grayscale {
-  filter: grayscale(80%);
-}
-
-.hue-rotate {
-  filter: hue-rotate(45deg);
-}
-
-.saturate {
-  filter: saturate(400%);
-}
-
-.combo {
-  filter: sepia(0.6) brightness(0.5);
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -396,6 +368,34 @@ dialog[open] .ok-button span {
     animation-fill-mode: none;
     transform-origin: center;
   }
+}
+
+.blur {
+  filter: blur(15px);
+}
+
+.sepia {
+  filter: sepia(0.6);
+}
+
+.brightness {
+  filter: brightness(0.5);
+}
+
+.grayscale {
+  filter: grayscale(80%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(45deg);
+}
+
+.saturate {
+  filter: saturate(400%);
+}
+
+.combo {
+  filter: sepia(0.6) brightness(0.5);
 }
 
 @media (width <= 375px) {
