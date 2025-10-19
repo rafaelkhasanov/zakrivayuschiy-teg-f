@@ -234,6 +234,7 @@ dialog[open] {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding: 28px;
   border: 2px solid var(--black-color);
   font-family: var(--accent-font), fantasy;
   font-weight: 400;
